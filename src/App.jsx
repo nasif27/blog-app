@@ -7,7 +7,10 @@ import { EditContext } from "./EditContext";
 import { useState } from "react";
 
 export default function App() {
-  const apiURL = 'https://vercel-express-blog-api.vercel.app';
+  const apiURL = 'https://vercel-express-blog-api.vercel.app/';
+  // const blog_API_URL = 'https://vercel-express-blog-api.vercel.app/';
+
+  // const [page, setPage] = useState();
 
   // const [posts, setPosts] = useState([]);     // 1 user, Many posts   [{post.id, post.created_at, post.updated_at, post.title, post.content}]
 
