@@ -5,6 +5,7 @@ import ProfilePage from "./pages/ProfilePage";
 import { EditContext } from "./EditContext";
 // import { PostArrayContext } from "./PostsArrayContext";
 import { useState } from "react";
+import HomePage from "./pages/HomePage";
 // import axios from "axios";
 
 export default function App() {
@@ -40,6 +41,7 @@ export default function App() {
         <EditContext.Provider value={{isEdit, setIsEdit, editId, setEditId}}>
           <BrowserRouter>
             <Routes>
+              <Route path="/" element={<HomePage />} />
               <Route path="/login" element={<AuthPage apiURL={apiURL} />} />
               <Route path="/profile" element={<ProfilePage apiURL={apiURL} />} />
             </Routes>
